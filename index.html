@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SkillGap Analyzer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=18">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar" aria-label="Application navigation">
+    <div class="sidebar-brand">
+      <div class="brand-mark">SG</div>
+      <div class="brand-copy"><strong>SkillGap</strong><span>ANALYZER</span></div>
+    </div>
+    <button class="sidebar-toggle" id="sidebar-toggle" type="button" aria-label="Collapse sidebar" aria-expanded="true"><span class="toggle-glyph">‹</span><span class="toggle-label">Collapse menu</span></button>
+    <div class="nav-caption">WORKSPACE</div>
+    <nav id="nav" aria-label="Main">
+      <a href="#home" data-p="home"><span class="nav-icon">⌂</span><span class="nav-label">Home</span></a>
+      <a href="#profile" data-p="profile"><span class="nav-icon">♙</span><span class="nav-label">Employee Profile</span></a>
+      <a href="#skills" data-p="skills"><span class="nav-icon">◈</span><span class="nav-label">Skills Analysis</span></a>
+      <a href="#gaps" data-p="gaps"><span class="nav-icon">⌁</span><span class="nav-label">Skill Gap Analysis</span></a>
+      <a href="#compare" data-p="compare"><span class="nav-icon">⇄</span><span class="nav-label">Compare Roles</span></a>
+      <a href="#training" data-p="training"><span class="nav-icon">▣</span><span class="nav-label">Training Recommendations</span></a>
+      <a href="#coach" data-p="coach"><span class="nav-icon">✦</span><span class="nav-label">Growth Coach</span></a>
+      <a href="#results" data-p="results"><span class="nav-icon">▤</span><span class="nav-label">Analysis Results</span></a>
+      <a href="#readiness" data-p="readiness"><span class="nav-icon">◉</span><span class="nav-label">Readiness Dashboard</span></a>
+      <a href="#esg" data-p="esg"><span class="nav-icon">♧</span><span class="nav-label">ESG Development</span></a>
+    </nav>
+    <div class="sidebar-bottom"><div class="sidebar-help"><span class="help-dot">?</span><span class="nav-label"><b>Grow with purpose</b><small>Skills. Potential. Progress.</small></span></div></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar">
+      <div class="topbar-left"><button class="mobile-menu" id="mobile-menu" type="button" aria-label="Open navigation">☰</button><span class="breadcrumb">Workspace <span>/</span> <b id="page-label">Home</b></span></div>
+      <div class="topbar-right"><span class="status-pill"><i></i> Development workspace</span><div class="avatar">SG</div></div>
+    </header>
+<main id="app"></main>
+<footer>
+  <b>SkillGap Analyzer</b>
+  <p style="margin:.4rem auto">Help HR develop employees, recognize potential, and identify internal growth opportunities.</p>
+  <p style="margin:0 auto">Explore strengths, close skill gaps, and plan purposeful career growth with transparent, personalized guidance.</p>
+</footer>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="app.js?v=19"></script>
+</body>
+</html>
